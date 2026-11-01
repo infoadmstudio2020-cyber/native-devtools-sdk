@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/rootScrollView"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fillViewport="true"
+    android:background="#121212">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="20dp">
+
+        <TextView
+            android:id="@+id/tvAppTitle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="NativeDevToolsSDK Companion Demo"
+            android:textSize="22sp"
+            android:textStyle="bold"
+            android:textColor="#FFFFFF"
+            android:layout_marginBottom="12dp" />
+
+        <TextView
+            android:id="@+id/tvTelemetryBadge"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Status: Ready | Port: 9222 | FPS: 60.0 | Memory: -- MB"
+            android:textSize="14sp"
+            android:textColor="#03DAC5"
+            android:padding="12dp"
+            android:background="#1E1E1E"
+            android:layout_marginBottom="16dp" />
+
+        <!-- Control Buttons -->
+        <Button
+            android:id="@+id/btnToggleDrawer"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Toggle Debug Drawer / Bubble"
+            android:layout_marginBottom="8dp" />
+
+        <Button
+            android:id="@+id/btnSimulateNetwork"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Simulate HTTP Traffic Snooper"
+            android:layout_marginBottom="8dp" />
+
+        <Button
+            android:id="@+id/btnExportHar"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Export HAR 1.2 Archive"
+            android:layout_marginBottom="8dp" />
+
+        <Button
+            android:id="@+id/btnProfileSpan"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Record Profiler Performance Span"
+            android:layout_marginBottom="8dp" />
+
+        <Button
+            android:id="@+id/btnDispatchCdp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Dispatch Chrome DevTools (CDP) Message"
+            android:layout_marginBottom="8dp" />
+
+        <Button
+            android:id="@+id/btnSimulateCrash"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Simulate &amp; Intercept Uncaught Crash"
+            android:layout_marginBottom="16dp" />
+
+        <TextView
+            android:id="@+id/tvConsoleOutput"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Diagnostic Console:\n"
+            android:fontFamily="monospace"
+            android:textSize="12sp"
+            android:padding="12dp"
+            android:background="#1E1E1E"
+            android:textColor="#E0E0E0" />
+
+    </LinearLayout>
+</ScrollView>
+
